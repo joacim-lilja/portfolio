@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -32,7 +32,103 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: inline-block;
+    background-size: cover;
+    background-image: url('/background.jpg');
+    width: 100%;
+  }
+
+  #title {
+    display: inline-block;
+    padding: 0 0 2% 5%;
+    margin: 0;
+  }
+
+  #titleplaceholder {
+    color: rgb(255, 255, 255);
+    padding: 15px 15px 15px 5px;
+    border: none;
+    border-radius: 15px;
+    font-size: 40px;
+    font: bold;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  #titleplaceholder:hover {
+    font-size: 50px;
+    color: rgba(0, 127, 255, 0.3);
+  }
+
+  #navbar {
+    background-color: rgba(32, 119, 206, 0.25);
+    height: 100px;
+    box-shadow: inset 0px 0px 40px 15px rgba(0, 0, 0, 0.45);
+  }
+
+  #leftnavbar {
+    display: inline-block;
+  }
+
+  #rightnavbar {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 5%;
+  }
+
+  .buttondiv {
+    display: inline-flex;
+    top: 25px;
+    height: 12px;
+    width: 128px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 900;
+  }
+
+  .navbutton {
+    color: rgb(255, 255, 255, 0.9);
+    padding: 0px;
+    position: absolute;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    font: bold;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .buttondiv .navbutton:hover {
+    color: rgba(0, 127, 255, 0.3);
+    font-size: 30px;
+  }
+
+  .content {
+    margin: 5% 15% 10% 15%;
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+    background-color: rgba(118, 119, 160, 0.25);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: rgba(118, 119, 160, 0.25);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
 }
