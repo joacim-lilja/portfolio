@@ -117,7 +117,7 @@
     display: inline-block;
     text-align: center;
     width: 70%;
-    background-color: rgba(118, 119, 160, 0.25);
+    background-color: rgba(118, 119, 160, 0.35);
     color: rgba(255, 255, 255, 0.7);
   }
 
@@ -129,6 +129,19 @@
     text-align: center;
     background-color: rgba(118, 119, 160, 0.25);
     color: rgba(255, 255, 255, 0.7);
+  }
+
+  #contactlist {
+    columns: 2;
+    width: 30%;
+    margin-left: 35%;
+    font-size: x-large;
+    text-align: center;
+    list-style: none;
+  }
+
+  .content p {
+    font-size: 20px;
   }
 
 }

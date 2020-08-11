@@ -24,10 +24,10 @@ function App() {
               <Link to="/projects" class="navbutton">Projects</Link>
             </div>
             <div className="buttondiv">
-              <Link to="/contact" class="navbutton">Contact</Link>
+              <Link to="/about" class="navbutton">About</Link>
             </div>
             <div className="buttondiv">
-              <Link to="/about" class="navbutton">About</Link>
+              <Link to="/contact" class="navbutton">Contact</Link>
             </div>
           </div>
         </div>
