@@ -9,6 +9,27 @@ import Projects from './components/Projects'
 
 
 function App() {
+
+  function hideFooter() {
+    var footer = document.getElementById('footer');
+    var header = document.getElementById('navbar')
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    if (scrolled > 90) {
+      footer.style.height = "5%";
+    } else {
+      footer.style.height = "0%";
+    }
+    if (scrolled < 10) {
+      header.style.height = "100px";
+    } else {
+      header.style.height = "0px";
+    }
+  };
+
+  window.onscroll = () => {hideFooter()};
+
   return (
     <Router>
       <body style={{ 'background-image': '%PUBLIC_URL%/background.jpg' }}>
@@ -35,27 +56,26 @@ function App() {
 
 
         <div>
-            <Switch>
-              <Route path="/contact">
-                <Contact />
-              </Route>
+          <Switch>
+            <Route path="/contact">
+              <Contact />
+            </Route>
 
-              <Route path="/about">
-                <About />
-              </Route>
+            <Route path="/about">
+              <About />
+            </Route>
 
-              <Route path="/projects">
-                <Projects />
-              </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
 
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
         </div>
-
         <div id="footer">
-          <h3>you can find my information on the pages</h3>
+          <h3>you can find my information on the contact page</h3>
         </div>
       </body>
     </Router>
