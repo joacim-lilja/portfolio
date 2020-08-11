@@ -9,7 +9,7 @@ export default class About extends Component {
                 </div>
 
                 <div>
-                    <h2>This far I haven't uploaded any projects because i don't have any projects to upload because I'm lazy.</h2>
+                    <h2>I haven't uploaded any projects because I don't have any projects to upload yet</h2>
                 </div>
             </div>
         );
