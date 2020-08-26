@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 export default class Contact extends Component {
     render() {
         return (
-            <div className="content">
-                <h2 className="pagetitle">Contact Information</h2>
+            <div>
+                <h1 className="pagetitle">Contact Information</h1>
                 <ul id="contactlist">
                     <li >
                         Email address:

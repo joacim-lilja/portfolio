@@ -4,7 +4,7 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <div className="content">
+                <div>
                     <h1 className="pagetitle">About Me</h1>
                     <h2>22 year old soon to be software engineer living in Huskvarna, Sweden</h2>
                     <p>My spare time is spent walking my dog, playing games or developing cutting edge pasta
@@ -18,7 +18,6 @@ export default class About extends Component {
                     
                     <p>I love to find out how things work wether it's hardware or software, and have a quite easy time
                         learning new things.</p>
-                    <div style={{"height" : "1000px"}}></div>
                     <p>I am very open to criticism, wether it be negative or positive, as I would see it as a chance to
                         improve and develop both my skills and me as a person.</p>
                 </div>
