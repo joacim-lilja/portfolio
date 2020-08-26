@@ -50,6 +50,11 @@
     height: 100%;
   }
 
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
   #title {
     display: inline-block;
     padding: 0 0 2% 5%;
@@ -76,7 +81,7 @@
     background-color: rgba(32, 119, 206, 0.25);
     height: 100px;
     box-shadow: inset 0px 0px 40px 15px rgba(0, 0, 0, 0.45);
-    position: static;
+    position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -108,7 +113,7 @@
   .navbutton {
     color: rgb(255, 255, 255, 0.9);
     padding: 0px;
-    position: absolute;
+    position: fixed;
     border: none;
     border-radius: 15px;
     font-size: 24px;
@@ -122,6 +127,10 @@
     font-size: 30px;
   }
 
+  #content-wrap {
+    padding-bottom: 4rem;
+  }
+
   .content {
     margin: 5% 15% 10% 15%;
     display: inline-block;
@@ -132,11 +141,10 @@
   }
 
   #footer {
-    position: fixed;
-    left: 0;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 0;
+    height: 4rem;
     text-align: center;
     background-color: rgba(118, 119, 160, 0.25);
     color: rgba(255, 255, 255, 0.7);
